@@ -10,6 +10,9 @@ class Stfl < Formula
   end
 
   def install
+    ENV.deparallelize
+    ENV.no_optimization
     system "make install prefix=#{prefix}"
   end
 end
+
