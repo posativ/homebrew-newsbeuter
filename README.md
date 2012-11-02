@@ -7,5 +7,5 @@ OS X Lion (don't know wether it works with SL). Hope it works for you.
     brew tap posativ/homebrew-newsbeuter
 
     # install newsbeuter
-    brew install newsbeuter
+    brew install newsbeuter [--HEAD]
 
