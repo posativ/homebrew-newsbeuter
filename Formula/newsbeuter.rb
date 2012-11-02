@@ -2,6 +2,7 @@ require 'formula'
 
 class Newsbeuter < Formula
   homepage 'http://newsbeuter.org/'
+  head 'https://github.com/akrennmair/newsbeuter.git'
   url 'http://newsbeuter.org/downloads/newsbeuter-2.5.tar.gz'
   md5 'bb8cd3f2a3693de4c16be28c869a1f75'
 
@@ -10,11 +11,11 @@ class Newsbeuter < Formula
   depends_on 'sqlite'
   depends_on 'libxml2'
   depends_on 'json-c'
-  # depends_on 'ncurses'
   depends_on 'gettext'
 
   def patches
-    "https://raw.github.com/gist/2431979/newsbeuter.diff"
+	return [DATA] if build.head?
+	return [DATA, "https://raw.github.com/gist/2431979/newsbeuter.diff"]
   end
 
   def install
@@ -23,3 +24,17 @@ class Newsbeuter < Formula
   end
 
 end
+
+__END__
+diff --git a/src/ttrss_api.cpp b/src/ttrss_api.cpp
+index 2cb36d4..0b7ac21 100644
+--- a/src/ttrss_api.cpp
++++ b/src/ttrss_api.cpp
+@@ -228,7 +228,7 @@ rsspp::feed ttrss_api::fetch_feed(const std::string& id) {
+ 		const char * link = json_object_get_string(json_object_object_get(item_obj, "link"));
+ 		const char * content = json_object_get_string(json_object_object_get(item_obj, "content"));
+ 		time_t updated = (time_t)json_object_get_int(json_object_object_get(item_obj, "updated"));
+-		boolean unread = json_object_get_boolean(json_object_object_get(item_obj, "unread"));
++		bool unread = json_object_get_boolean(json_object_object_get(item_obj, "unread"));
+ 
+ 		rsspp::item item;
