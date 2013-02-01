@@ -4,7 +4,7 @@ class Newsbeuter < Formula
   homepage 'http://newsbeuter.org/'
   head 'https://github.com/akrennmair/newsbeuter.git'
   url 'http://newsbeuter.org/downloads/newsbeuter-2.5.tar.gz'
-  md5 'bb8cd3f2a3693de4c16be28c869a1f75'
+  sha1 'f3ed4d98c790e881a3782bd7c3e5572b09689bf5'
 
   depends_on 'stfl'
   depends_on 'curl'
