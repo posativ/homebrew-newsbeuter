@@ -3,7 +3,7 @@ require 'formula'
 class Stfl < Formula
   homepage 'http://www.clifford.at/stfl/'
   url 'http://www.clifford.at/stfl/stfl-0.22.tar.gz'
-  md5 'df4998f69fed15fabd702a25777f74ab'
+  sha1 '226488be2b33867dfb233f0fa2dde2d066e494bd'
 
   def patches
     "https://raw.github.com/gist/1556181/stfl.diff"
