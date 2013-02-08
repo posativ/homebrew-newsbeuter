@@ -14,8 +14,7 @@ class Newsbeuter < Formula
   depends_on 'gettext'
 
   def patches
-	return [DATA] if build.head?
-	return [DATA, "https://raw.github.com/gist/2431979/newsbeuter.diff"]
+    return [DATA, "https://raw.github.com/gist/2431979/newsbeuter.diff"] if not build.head?
   end
 
   def install
