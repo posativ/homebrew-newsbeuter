@@ -12,7 +12,6 @@ repository, then try `brew install newsbeuter --HEAD`
 
 You can also install via URL:
 
-    brew install https://raw.github.com/jbernard/homebrew-newsbeuter/master/stfl.rb
     brew install https://raw.github.com/jbernard/homebrew-newsbeuter/master/newsbeuter.rb
 
 ## Documentation

@@ -6,7 +6,7 @@ class Newsbeuter < Formula
   sha1 'f3ed4d98c790e881a3782bd7c3e5572b09689bf5'
   head 'https://github.com/akrennmair/newsbeuter.git', :using => :git
 
-  depends_on 'stfl'
+  depends_on 'libstfl'
   depends_on 'curl'
   depends_on 'sqlite'
   depends_on 'json-c'
