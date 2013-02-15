@@ -9,7 +9,6 @@ class Newsbeuter < Formula
   depends_on 'stfl'
   depends_on 'curl'
   depends_on 'sqlite'
-  depends_on 'libxml2'
   depends_on 'json-c'
   depends_on 'gettext'
 
