@@ -4,7 +4,7 @@ These formulae provide newsbeuter.
 
 ## How do I install newsbeuter?
 
-Just `brew tap jbernard/newsbeuter` and then `brew install newsbeuter`. This
+Just `brew tap posativ/newsbeuter` and then `brew install newsbeuter`. This
 will install the latest official release of newsbeuter.
 
 If you want the latest development version of newsbeuter from the git
@@ -12,7 +12,7 @@ repository, then try `brew install newsbeuter --HEAD`
 
 You can also install via URL:
 
-    brew install https://raw.github.com/jbernard/homebrew-newsbeuter/master/newsbeuter.rb
+    brew install https://raw.github.com/posativ/homebrew-newsbeuter/master/newsbeuter.rb
 
 ## Documentation
 
