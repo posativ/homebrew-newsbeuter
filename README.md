@@ -1,6 +1,12 @@
 # homebrew-newsbeuter
 
-These formulae provide newsbeuter.
+These formulae used to provide newsbeuter for OS X. Note, that
+this formula has been merged into homebrew. Thus, this repository
+is no longer maintained.
+
+To install newsbeuter, just run:
+
+    bew install newsbeuter
 
 ## How do I install newsbeuter?
 
