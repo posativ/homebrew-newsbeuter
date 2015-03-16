@@ -6,7 +6,7 @@ is no longer maintained.
 
 To install newsbeuter, just run:
 
-    bew install newsbeuter
+    brew install newsbeuter
 
 ## How do I install newsbeuter?
 
